@@ -20,7 +20,7 @@ function App() {
       const parsedInput = JSON.parse(jsonInput);
 
       // Call the backend API
-      const response = await axios.post('qualifier-project-bf57hgmtf-shivangs-projects-d02b1c5c.vercel.app/bfhl', parsedInput);
+      const response = await axios.post('https://qualifier-project-git-main-shivangs-projects-d02b1c5c.vercel.app/bfhl', parsedInput);
       setResponseData(response.data);
       setIsSubmitted(true);
     } catch (err) {
