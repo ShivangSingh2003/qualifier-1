@@ -4,16 +4,16 @@ const app = express();
 
 app.use(express.json());
 
-// Serve static assets if in production
-if (process.env.NODE_ENV === 'production') {
-    // Set static folder
-    app.use(express.static(path.join(__dirname, 'client', 'build')));
+// // Serve static assets if in production
+// if (process.env.NODE_ENV === 'production') {
+//     // Set static folder
+//     app.use(express.static(path.join(__dirname, 'client', 'build')));
 
-    // Serve index.html on all routes
-    app.get('*', (req, res) => {
-        res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
-    });
-}
+//     // Serve index.html on all routes
+//     app.get('*', (req, res) => {
+//         res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
+//     });
+// }
 
 // User details
 const USER_ID = "john_doe_17091999"; // Change this to your full name and DOB
