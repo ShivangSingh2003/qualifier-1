@@ -20,7 +20,7 @@ function App() {
       const parsedInput = JSON.parse(jsonInput);
 
       // Call the backend API
-      const response = await axios.post('https://qualifier-project.vercel.app/bfhl', parsedInput);
+      const response = await axios.post('https://qualifier-project.vercel.app/', parsedInput);
       setResponseData(response.data);
       setIsSubmitted(true);
     } catch (err) {
@@ -95,5 +95,3 @@ function App() {
 
 export default App;
 
-
-export default App;
